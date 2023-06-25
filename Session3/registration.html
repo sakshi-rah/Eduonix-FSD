@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration Form</title>
+</head>
+<body>
+    <h1>Resistration Form</h1>
+
+    <form action="Form" method="post"  style="background-color: coral;">
+<br>
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter First Name"> <br> <br>
+
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter Last Name"> <br> <br>
+
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username" placeholder="Enter Username"> <br> <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your Password"> <br> <br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"> <br> <br>
+
+        <label for="dob">Date of birth :</label>
+        <input type="date" name="dob" id="dob" min="1995" max="2050"> <br> <br>
+
+        <label for="phone">Phone No. :</label>
+        <input type="number" name="phone" id="phone"> <br> <br>
+
+        <label for="file">Profile Pic :</label>
+        <input type="file" name="Profile" id="Profile"> <br> <br>
+
+        <label for="age">Your Age :</label>
+        <input type="number" name="age" id="age"> <br> <br>
+
+        Languages Known :
+       
+        <input type="checkbox" name="lang1" id="lang1" value="eng" checked >
+        <label for="eng">English</label>
+        <input type="checkbox" name="lang2" id="lang2" value="hin"  >
+        <label for="hin">Hindi</label>
+        <input type="checkbox" name="lang3" id="lang3" value="mar"  >
+        <label for="mar">Marathi</label>
+
+        <br><br>
+
+        <label for="gender">Gender :</label>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label> Male </label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label> Female </label>
+        <input type="radio" id="gender" name="gender" value="other">
+        <label> Other </label>
+
+        <br><br>
+    
+        <label for="qua">Qualification Details</label>
+
+        <select name="qua" id="qua">
+            <option value="ssc">SSC</option>
+            <option value="hsc">HSC</option>
+            <option value="graduate">Graduate</option>
+            <option value="pg">Post Graduate</option>
+        </select>
+
+        <br><br>
+
+        <label for="feedback">Feedback</label>
+        <textarea id="fb" row="5" cols="50"></textarea>
+
+        <br><br> <br> 
+
+        <input type="submit" value="Sign Up"> <br><br>
+       
+    </form>
+</body>
+</html>
