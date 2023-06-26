@@ -10,38 +10,63 @@
 <style>
     h1 {
         text-align: center;
+        font-size: 45px;
+        font-style: italic;
+        color: rgb(37, 94, 179);
     }
 
     .audio-container {
         display: flex;
         justify-content: space-around;
+        padding-top: 40px;
     }
-    nav{
-background-color: rgb(214, 144, 144);
+
+    nav {
+        background-color: rgb(204, 98, 98);
+        color: aliceblue;
     }
-    .navbar-items{
+
+    .navbar-items {
         display: flex;
         justify-content: space-around;
         font-size: 23px;
     }
-    .navbar-items li a{
-        color: rgb(0, 0, 0);
+
+    .navbar-items li a {
+        color: aliceblue;
         text-decoration: none;
+    }
+
+    .video-container span iframe {
+        padding-left: 80px;
+        padding-top: 50px;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(179, 37, 37);
     }
 </style>
 
 <body style="background-color: rgb(231, 190, 190);">
 
-    <nav>
+    <nav id="nav">
         <ul class="navbar-items">
-            <li><a href="#">Home</a></li>
+            <li><a href="#nav">Home</a></li>
             <li><a href="#musics">Musics</a></li>
-            <li><a href="#">videos</a></li>
-            <li><a href="#footer">contact</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
+    <br>
 
     <h1>Welcome To The Sound Gallary</h1>
+    <br>
+
+    <h3> Bhajan Audios</h3>
+
     <div class="audio-container" id="musics">
         <audio controls autoplay muted loop>
             <source src="./Sounds/09. Ram Bhajan Kar Man.mp3">
@@ -60,7 +85,7 @@ background-color: rgb(214, 144, 144);
         </audio>
     </div>
     <br>
-    
+
     <div class="audio-container">
         <details>
             <summary> Raam Bhajan Kar Man lyrics</summary>
@@ -171,6 +196,44 @@ background-color: rgb(214, 144, 144);
             </P>
         </details>
     </div>
+    <br><br><br>
+    <br><br><br>
+
+    <hr>
+
+    <div class="video-container" id="videos">
+
+        <span>
+            <iframe width="550" height="309" src="https://www.youtube.com/embed/6iUZ_DKgwqU"
+                title="Day - 07 ll श्री नंदीश्वर शिवमहापुराण कथा - पूज्य पंडित प्रदीप जी मिश्रा ll खगड़िया, बिहार"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe width="550" height="309" src="https://www.youtube.com/embed/uCln4aFeLBM"
+                title="श्री कृष्ण जन्म | Shree Krishna Janam | Movie | Tilak" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </span>
+
+        <span>
+            <iframe width="550" height="309" src="https://www.youtube.com/embed/6El8Ia4fYDc"
+                title="रामानंद सागर कृत सम्पूर्ण रामायण I लाईव - भाग 1 l Sampurna Ramayan - Live - Part 1 | Tilak"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe width="550" height="309" src="https://www.youtube.com/embed/gfMXbURwVQA"
+                title="मारुती मेरी रक्षा करो मारुती || Full Episode || Jai Jai Jai Bajrangbali @INN TV" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </span>
+    </div><br><br><br>
+    <hr> <br><br>
+
+    <video controls muted loop autoplay width="1200px" style="padding-left: 70px;">
+        <source src="./Sounds/sample-5s.mp4">
+    </video>
 
     <footer style="background-color: rgb(44, 65, 65); color: white; text-align: center;" id="footer">
         <H2> Contact Us</H2>
