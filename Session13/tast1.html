@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let row=5;
+        let pattern=""
+        for(let n=1;n<=row;n++){
+            for(let space=1; space<= row-n; space++){
+                pattern += " ";
+            }
+
+            for(let num=1;num<= 2 * n - 1 ; num++){
+                pattern +=num;
+            }
+
+            pattern +="\n";
+        }
+
+        console.log(pattern);
+    </script>
+</body>
+</html>
