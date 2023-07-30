@@ -8,8 +8,21 @@
 <body>
     <script>
         let fullName = prompt("Enter Fullname :");
-        
-        document.write()
+
+        let name = prompt("Enter Full Name");//Nikunj Soni
+
+        //remove extra space and breaks using " "
+        let names= name.trim().split(" ");
+
+        console.log(names);
+         //names is an array with 2 values
+         //names[0]== first name saved==Sakshi
+         //names[1]== last name saved==Rahangdale
+
+        let result =names[0].charAt(0).toUpperCase()+names[0].slice(1)
+        +" "+names[1].charAt(0).toUpperCase();
+
+        document.write(`Fullname: ${result}`)
     </script>
 </body>
 </html>
