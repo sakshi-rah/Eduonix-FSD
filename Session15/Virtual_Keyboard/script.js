@@ -7,3 +7,7 @@ keys.forEach(key => {
     document.getElementById("charKey").innerHTML=keyPressed
   });
 });
+
+function clearkey(){
+  document.getElementById("charKey").innerHTML=" ";
+}
