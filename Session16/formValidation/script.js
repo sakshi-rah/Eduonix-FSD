@@ -50,7 +50,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     if (password.length < 8) {
         passwordError.textContent = "Password must be at least 8 characters";
         isValid = false;
-    }else{
+    } else {
         passwordSuccess.textContent = "Password verified";
     }
 
