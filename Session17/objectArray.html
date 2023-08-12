@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Array</title>
+</head>
+
+<body>
+    <h1>Object Array</h1>
+    <script>
+
+        let applicants = [
+            {
+                id: 1, name: "Sakshi Rahangdale",
+                username: "Sakshi Rahangdale",
+                email: "sakshirahangdale@gmail.com",
+                phone: "4567-6782-45",
+                address: {
+                    street: "Kulas Light",
+                    landmark: "Apt. 556",
+                    city: "Nagpur"
+                },
+                company: {
+                    name: "Google",
+                    catchPhrase: "Multi-layered client-server neural-net",
+                    bs: "harness real-time e-markets"
+                }
+
+            },
+
+            {
+                id: 2, name: "Abhi Dangi",
+                username: "Abhi Dangi",
+                email: "ad@gmail.com",
+                phone: "4563-4764-34",
+                address: {
+                    street: "Panbai Nagar",
+                    landmark: "Cheeda Marg",
+                    city: "Rajisthan"
+                },
+                company: {
+                    name: "Tata(TCS)",
+                    catchPhrase: "Multi-layered client-server neural-net",
+                    bs: "harness real-time e-markets"
+                }
+
+            }
+            ,
+            {
+                id: 3, name: "Mahi Patel",
+                username: "Mahi Patel",
+                email: "mp@gmail.com",
+                phone: "7788-3452-67",
+                address: {
+                    street: "Bandra Sea Link",
+                    landmark: "Band Stand",
+                    city: "Delhi"
+                },
+                company: {
+                    name: "Wibro",
+                    catchPhrase: "Multi-layered client-server neural-net",
+                    bs: "harness real-time e-markets"
+                }
+
+            },
+            {
+                id: 3, name: "Surbhi Turkar",
+                username: "Surbhi Turkar",
+                email: "st@gmail.com",
+                phone: "7989-3352-67",
+                address: {
+                    street: "Bandra Sea Link",
+                    landmark: "Band Stand",
+                    city: "Gujarat"
+                },
+                company: {
+                    name: "Romaguera-Crona",
+                    catchPhrase: "Multi-layered client-server neural-net",
+                    bs: "harness real-time e-markets"
+                }
+
+            }
+
+        ];
+
+        for (let x of applicants) {
+            document.write(
+                `<b>ID:</b> ${x.id}, <br>
+                <b>Name:</b> ${x.name}, <br>
+                <b>User Name:</b> ${x.username},<br>
+                <b>Email:</b> ${x.email},<br>
+                <b>Phone:</b> ${x.phone},<br>
+                <b>Address:</b> <br>
+                Streat: ${x.address.street},<br>
+                LandMark:${x.address.landmark},<br>
+                City: ${x.address.city} <br>
+                <b>company:</b><br>
+                name: ${x.company.name}<br>
+                catchPhrase: ${x.company.catchPhrase}<br>
+                bs: ${x.company.bs}<br><br>
+                `
+            );
+        }
+
+
+    </script>
+</body>
+
+</html>
+<!-- https://jsonplaceholder.typicode.com/users/ -->
