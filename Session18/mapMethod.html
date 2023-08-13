@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Method</title>
+</head>
+<body>
+    <h1>Map Method</h1>
+    <script>
+        let array = [4,5,7,8,2,4,3]
+
+        const newArray = array.map((value)=>value+10)
+        document.write("New Array is "+ newArray,"<br>")
+
+        newArray.forEach((value,index)=>{
+            document.write(`<br> ${index} value is ${value} <br>`)
+        })
+    </script>
+</body>
+</html>
