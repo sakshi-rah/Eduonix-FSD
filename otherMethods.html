@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+    <h1>Sort, reverse, every, some are Methods</h1>
+    <h2 id="name"></h2>
+    <h3 id="sort"></h3>
+
+    <script>
+        let name = ["Sakshi", "Mukesh", "Nikunj", "Abhi", "Kajal", "Yogi","Raj"]
+        document.getElementById('name').innerHTML = "Actual Array: "+ name
+        name.sort();
+        document.getElementById('sort').innerHTML = "Sorted Array: "+ name;
+
+        let result= name.reverse();
+        document.write(`Reverse Name Array : ${result} <br>`)
+
+
+        let numbers = [4,67,53,3,23,22,13,45,89,65,44,82]
+        const everyMethod = numbers.every((value)=>value%2==1)
+        document.write(`Every Method : ${everyMethod} <br>`)
+
+        const someMethod = numbers.some((value)=>value%2==0)
+        document.write(`Some Method : ${someMethod} <br>`)
+
+    </script>
+</body>
+</html>
