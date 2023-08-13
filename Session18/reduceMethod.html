@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Method</title>
+</head>
+<body>
+    <h1>Reduce Method</h1>
+    <script>
+        let marks = [35,67,89,70,50,90]
+        let sum=0;
+        const result = marks.reduce((sum,value)=>sum+value);
+        document.write("Sum of Marks: ",result,"<br>","<br>","<br>");
+
+        let sallary = 25000;
+        let total = 0;
+        //sallary
+        document.write("Your Sallary is ",sallary,"<br>");
+        
+        //sum of Expenses
+        let expenses = [2394, 589,678, 40,356]
+        const totalExpenses = expenses.reduce((total,value)=>total+value);
+        document.write("Sum of Marks: ",totalExpenses,"<br>");
+        
+        //Saving
+        const saving = expenses.reduce((acc,cur,index)=>{
+            return acc-cur;
+        },sallary)
+        document.write(`Your Saving is ${saving}`)
+    </script>
+</body>
+</html>
