@@ -9,9 +9,10 @@
     <h1>Map Method</h1>
     <script>
         let array = [4,5,7,8,2,4,3]
+        document.write("Original Array is "+ array,"<br> <br>")
 
         const newArray = array.map((value)=>value+10)
-        document.write("New Array is "+ newArray,"<br>")
+        document.write("New Array is "+ newArray,"<br> <br>")
 
         newArray.forEach((value,index)=>{
             document.write(`<br> ${index} value is ${value} <br>`)
