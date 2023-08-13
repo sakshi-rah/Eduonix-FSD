@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+    <h1>Filter, Find, FindIndex Methods</h1>
+    <script>
+        let array = [12,34,78,4,6,76,22,34,25,45,53,60,34,5]
+        document.write("Array: ",array,"<br>");
+
+        const result = array.filter((value)=>value>18)
+        document.write("result is ",result,"<br>")
+
+        const find = array.find((value,index)=>{
+            return value==60
+        })
+        document.write("find value 60: ",find,"<br>")
+
+        const FindIndex76s = array.findIndex((value)=>value==76)
+        document.write("find 76 index value : ",FindIndex76s,"<br>")
+
+
+        const found34s_new=array.filter((value,index)=>
+                {
+                    if(value==34){
+                            document.write(`<br> Index: ${index}`);
+                            return index;
+                    }
+                     
+                }
+        );
+
+        document.write(`<br> repeated 34 values are : ${found34s_new} values`);
+
+    </script>
+</body>
+</html>
