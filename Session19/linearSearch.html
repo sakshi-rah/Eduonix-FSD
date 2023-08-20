@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Searching</title>
 </head>
+
 <body>
     <h1>Linear Searching Algorithm</h1>
     <h2>[2,4,56,34,87,20,25,30,94]</h2>
     <script>
-           const array = [2,4,56,34,87,20,25,30,94]
-           let found = false;
+        const array = [2, 4, 56, 34, 87, 20, 25, 30, 94]
+        let found = false;
 
-           let temp = prompt('Enter your searching number') 
-           for(let i=0; i<array.length; i++){
-            if(array[i]==temp){
+        let temp = prompt('Enter your searching number')
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == temp) {
                 document.write(`${temp} is Found at Index ${i}`)
                 found = true;
             }
-           }
-           if(!found){
+        }
+        if (!found) {
             document.write(`${temp} Not Found, its Out of Index`)
-           }
+        }
+        document.write(`<br/><br/> <br/>`)
+
+        
+        const students = [
+            { id: 1, name: "Sakshi" },
+            { id: 2, name: "Mukesh" },
+            { id: 3, name: "Atul" },
+            { id: 4, name: "Sahil" },
+            { id: 5, name: "Kunal" },
+
+        ]
+        let found1 = false;
+
+        let temp1 = prompt('Enter your searching name')
+        for (let i = 0; i < students.length; i++) {
+            if (students[i].name == temp1) {
+                document.write(`${temp1} is Found, Id is ${students[i].id}`)
+                found1 = true;
+            }
+        }
+        if (!found1) {
+            document.write(`${temp1} Not Found, its Out of Index`)
+        }
     </script>
 </body>
+
 </html>
