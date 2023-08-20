@@ -9,13 +9,29 @@
         <h1> Assingment </h1>
         <p id="msg"></p>
         <button onclick="showMsg()">Click Me</button>
+
+        <br/><br/><br/>
+
+        <input type="text" placeholder="Enter Full Name" id="name"/>
+        <button onclick="showName()">Show Name</button>
+        <h4 id="showName"></h4>
         <script>
-    { /* 01 write a program to create a simple button by clicking it load the data in 
+        { /* 01 write a program to create a simple button by clicking it load the data in 
         <p> tag using javaScript.just load the simple welcome 
         message="welcome to the world of javascript"*/}
+
          function showMsg(){
             document.getElementById("msg").innerHTML="Welcome to the world of javascript"
          }
+
+         function showName(){
+            let showName = document.getElementById("name").value;
+            document.getElementById("showName").innerHTML=showName;
+         }
+
+         { /*02 WAP to get firstname, middlename and lastname from input field and then show 
+            full name using alert box when user click on submit button*/}
+
         </script>
     </body>
 </html>
