@@ -18,9 +18,9 @@
                 this.rollNo = rollNo;
             }
             print() {
-                console.log(`Student Name is ${this.name}`);
-                console.log(`${this.name} is ${this.className} std`);
-                console.log(`${this.name} roll no. is ${this.rollNo}`);
+                document.write(`Student Name is ${this.name} <br>`);
+                document.write(`${this.name} is ${this.className} std <br>`);
+                document.write(`${this.name} roll no. is ${this.rollNo} <br>`);
             }
         }
 
@@ -32,7 +32,7 @@
             }
             print() {
                 super.print();
-                console.log(`${this.name} school name is ${this.schoolName}`)
+                document.write(`${this.name} school name is ${this.schoolName}<br>`)
             }
         }
 
