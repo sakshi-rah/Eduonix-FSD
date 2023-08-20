@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+         const people = new Object();
+         people.firstName = "alex";
+         people.lastName = "alexing";
+         people.city = "japan";
+
+         document.write(`${people.firstName} ${people.lastName} live in ${people.city}`)
+
+
+          const employee={
+            id:1,
+            name:"sakshi",
+            email:"info@sakshi.com"};
+        //console.log(employee);
+
+        employee.year=2001;
+        console.log(employee);
+
+        employee.dob = new Date("07-10-2001");
+        console.log(employee);
+
+        delete employee.name;
+        console.log(employee);
+        
+
+        const user={
+            id:1,
+            firstName:"mukesh",
+            lastName:"pimpalkar",
+            email:"mp@gmail.com",
+            address:{
+                city:"Nagpur",
+                state:"Maharashtra",
+                zipcode:"123456"
+
+            },
+
+            fullname:function(){
+                return this.firstName+ " "+this.lastName
+            }
+        }
+
+        console.log(user);
+
+        console.log(`${user.firstName} is Staying at city ${user.address.city}`);
+
+        console.warn(user.fullname());
+    </script>
+</body>
+</html>
