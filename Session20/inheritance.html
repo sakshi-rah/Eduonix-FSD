@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+
+<body>
+    <h1>Inheritance Concept</h1>
+    <script>
+
+        class student {
+            constructor(name, className, rollNo) {
+                this.name = name;
+                this.className = className;
+                this.rollNo = rollNo;
+            }
+            print() {
+                console.log(`Student Name is ${this.name}`);
+                console.log(`${this.name} is ${this.className} std`);
+                console.log(`${this.name} roll no. is ${this.rollNo}`);
+            }
+        }
+
+        class school extends student {
+
+            constructor(name, className, rollNo, schoolName) {
+                super(name, className, rollNo);
+                this.schoolName = schoolName;
+            }
+            print() {
+                super.print();
+                console.log(`${this.name} school name is ${this.schoolName}`)
+            }
+        }
+
+        let sakshiStudent = new school("Sakshi", "Graduate", 28, "TGPCET");
+        sakshiStudent.print()
+
+    </script>
+</body>
+
+</html>
