@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Binary Searching</title>
+    </head>
+    <body>
+        <h1>Binary Searching Algorithm</h1>
+        <h2>[12,24,32,50,56,66,78,89]</h2>
+
+       <script>
+        const array = [12,24,32,50,56,66,78,89]
+
+        let left=0;
+        let right=array.length-1;
+
+        const user=prompt("Enter Searching Number");
+
+        while(left<=right){
+            
+            let mid=Math.floor((left+right)/2);
+            if(array[mid]==user){
+                document.write(`${user} Found at index ${mid}`);
+                break;
+            }
+            else if(array[mid]>user){
+                right=mid-1;
+            }
+            else {
+                left=mid+1;
+            }
+
+        }
+        if(left>right){
+            document.write("Element Not Found");
+        }
+
+       </script>
+    </body>
+</html>
