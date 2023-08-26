@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest Para</title>
+</head>
+<body>
+    <h1>Rest Parameter</h1>
+    <script>
+        function sum(...num){
+            var total=0;
+            for(let i of num){
+                total = total + i;
+            }
+            return total;
+        }
+        console.warn("sum of numbers: ",sum(1,4,6,7,8))
+    </script>
+</body>
+</html>
