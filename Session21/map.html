@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+    <script>
+        let map = new Map();
+
+        map.set(1, "john");
+        map.set(2, "alex");
+        map.set(3, "rahul");
+        map.set(4, "peter");
+        map.set(5, "juhi");
+        map.set(6, "ruhi");
+        console.log(map)
+
+        map.forEach((value)=>{
+            console.log(value)
+        })
+        console.log(map.keys())
+        console.log(map.has("rahul"))
+        console.log(map.get(2))
+        console.log(map.delete(5))
+        console.log(map)
+        console.log(map.clear())
+        console.log(map)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
