@@ -6,7 +6,7 @@
     <title>rest Para</title>
 </head>
 <body>
-    <h1>Rest Parameter</h1>
+    <h1>Rest Parameter & default Parameter</h1>
     <script>
         function sum(...num){
             var total=0;
@@ -15,7 +15,14 @@
             }
             return total;
         }
-        console.warn("sum of numbers: ",sum(1,4,6,7,8))
+        console.warn("sum of numbers: ",sum(1,4,6,7,8));
+
+        function add(a,b=3){
+            return a+b;
+        }
+        console.log("add two numbers:",add(2,7));
+        console.log("add two numbers:",add(4));
+
     </script>
 </body>
 </html>
