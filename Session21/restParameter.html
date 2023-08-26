@@ -6,7 +6,7 @@
     <title>rest Para</title>
 </head>
 <body>
-    <h1>Rest Parameter & default Parameter</h1>
+    <h1>Rest, default & Spead Parameter</h1>
     <script>
         function sum(...num){
             var total=0;
@@ -22,6 +22,12 @@
         }
         console.log("add two numbers:",add(2,7));
         console.log("add two numbers:",add(4));
+
+        function addNum(a,b=1,c,d,e){
+            return a+b+c+d+e;
+        }
+        const numb=[2,3,7,8,5]
+        console.log("add five numbers:",addNum(...numb));
 
     </script>
 </body>
