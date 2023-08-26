@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sets</title>
+    </head>
+    <body>
+        <h1>Sets methods</h1>
+        <script>
+        let object = new Set();
+        object.add(23);
+        object.add("Sakshi");
+        object.add(34);
+        object.add(45);
+        object.add(67);
+
+        console.log("sets of object :",object);
+        console.log("Size:",object.size);
+        
+        object.forEach((value)=>{
+            console.log(value);
+        })
+        
+        console.log("delete method:",object.delete("Sakshi"));
+        console.log("sets of object :",object);
+
+        console.log("has method:",object.has(34));
+
+        object.clear()
+        console.log("sets of object :",object);
+
+       
+        
+        
+    </script>
+    </body>
+</html>
