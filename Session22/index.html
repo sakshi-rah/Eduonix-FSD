@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>session 22</title>
-</head>
-<body>
-    <h1>Async Example</h1>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>session 22</title>
+    </head>
+    <body>
+        <h1>Async Example</h1>
+        <script>
       function first(){
         setTimeout(()=>{
             console.warn('first function called')
@@ -21,7 +21,7 @@
             console.warn('third function called')
         },4000)
       }
-      function forth(){
+     function forth(){
         console.warn('forth function called')
       }
 
@@ -30,5 +30,5 @@
       third();
       forth();
     </script>
-</body>
+    </body>
 </html>
