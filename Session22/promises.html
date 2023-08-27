@@ -34,6 +34,23 @@
         first();
         fetch();
         
+        let promise1= new Promise((resolve,reject)=>{
+           
+           if(90>67){
+               resolve("TASK COMPLETED");
+           }else{
+               reject("ERROR WHILE EXECUTING THE TASK");
+           }
+       });
+
+       promise1.then((resp)=>{console.log(resp)});
+       promise1.catch((err)=>{console.log(err)});
+
+       const promise2 = fetch("https://jsonplaceholder.typicode.com/users");
+       promise2
+       .then((resp)=>resp.json())
+       .then((data)=>console.log(data))
+       .catch((err)=>console.log(err))
     </script>
 </body>
 
