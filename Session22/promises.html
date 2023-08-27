@@ -4,26 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>promises</title>
 </head>
 
 <body>
-    <h1>promises </h1>
+    <h1>promises Function</h1>
     <script>
 
         let promise = new Promise((resolve,reject)=>{
-            if(true){
-
+            if(false){
+                resolve('wahh!.....')
             }else{
-                
+                reject('ohh no!.....')
             }
         })
+        async function fetch(){
+            try {
+                const resp= await promise;
+                console.log(resp);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
         function first() {
             console.warn('first function called')
         }
        
         first();
-        
+        fetch();
         
     </script>
 </body>
