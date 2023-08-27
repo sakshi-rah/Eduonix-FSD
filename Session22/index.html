@@ -6,8 +6,27 @@
     <title>session 22</title>
 </head>
 <body>
+    <h1>Async Example</h1>
     <script>
-        
+      function first(){
+        console.warn('first function called')
+      }
+      function second(){
+        console.warn('second function called')
+      }
+      function third(){
+        setTimeout(()=>{
+            console.warn('third function called')
+        },4000)
+      }
+      function forth(){
+        console.warn('forth function called')
+      }
+
+      first();
+      second();
+      third();
+      forth();
     </script>
 </body>
 </html>
