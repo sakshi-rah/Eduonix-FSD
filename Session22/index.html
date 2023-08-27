@@ -9,13 +9,15 @@
     <h1>Async Example</h1>
     <script>
       function first(){
-        console.warn('first function called')
+        setTimeout(()=>{
+            console.warn('first function called')
+        },2000)
       }
       function second(){
         console.warn('second function called')
       }
       function third(){
-        setTimeout(()=>{
+        setInterval(()=>{
             console.warn('third function called')
         },4000)
       }
