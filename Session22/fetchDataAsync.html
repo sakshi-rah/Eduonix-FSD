@@ -26,13 +26,15 @@
         fetchData();
 
         function display(data){
-            html="<table border='1'><tr><th>ID</th><th>NAME</th><th>USERNAME</th><th>EMAIL</th></tr>";
+            html="<table border='1'><tr><th>ID</th><th>NAME</th><th>USERNAME</th><th>EMAIL</th></th><th>PHONE NO.</th><th>WEBSITE</th></tr>";
                 for(let i of data){
                     html+=`<tr>
                                 <td>${i.id}</td>
                                 <td>${i.name}</td>
                                 <td>${i.username}</td>
                                 <td>${i.email}</td>
+                                <td>${i.phone}</td>
+                                <td>${i.website}</td>
                             
                             </tr>
                         `
