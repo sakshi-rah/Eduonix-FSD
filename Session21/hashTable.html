@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hash Table</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hash Table</title>
+    </head>
+    <body>
 
-    <h1>HashTable Example</h1>
+        <h1>HashTable Example</h1>
 
-    <p> A Hashtable in Javascript is basically generalization of array. it is most commonly used for</p>
-    <p> searching those items inserted in an array</p>
+        <p> A Hashtable in Javascript is basically generalization of array. it
+            is most commonly used for</p>
+        <p> searching those items inserted in an array</p>
 
-    <h5>To create Hastable We need to  create Methods like </h5>
+        <h5>To create Hastable We need to create Methods like </h5>
 
-    <p>insert,get,serach,delete</p>
+        <p>insert,get,serach,delete</p>
 
-   <script>
+        <script>
 
     //Creating Hashtable Class
     class HashTable {
@@ -28,7 +29,6 @@
         //to create dynamic index
         setKeys(key){
             return key %10;
-
         }
         //to insert the value at dynamic index
         insert(value){
@@ -43,7 +43,6 @@
                     console.log("Value found at index: "+index);
             else
                     console.log("Value not found")
-
         }
 
         delete(value){
@@ -53,17 +52,21 @@
                     this.table[index]=[];
                     this.size--;
                     console.log("Value deleted from index: "+index);   
-                }
-                
+                }   
             }
             else{
                     console.log("Value not present")  
                 }
-            
-
         }
+        update(value){
+            const index=this.setKeys(value);
+            if(this.table[index]==value){
 
-
+                
+            } else{
+                    console.log("Value not present")  
+                }
+        }
     }
 
     const htObj= new HashTable();
@@ -86,8 +89,6 @@
 
         
     </script>
-     
 
-    
-</body>
+    </body>
 </html>
