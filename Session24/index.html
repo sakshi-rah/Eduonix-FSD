@@ -13,12 +13,24 @@
          background-color: brown;
          color: wheat;
          font-size: 23px;
+         padding: 20px;
         }
         .fruitsImg{
             width: 250px;
             border-radius: 20px;
-            margin: 20px;
             margin-left: 100px;
+        }
+        .btn{
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            border: none;
+        }
+        .btnBox{
+          display: flex;
+          justify-content: space-around;
         }
     </style>
     </head>
@@ -33,8 +45,10 @@
                 Agriculture crops, Horticulture crops, Sericulture, Dairy,
                 Poultry, Fishery etc. Each of this activity requires specialised
                 knowledge and experience.</p>
-            <button onclick="addStyle()">Add Style</button>
-            <button onclick="removeStyle()">Remove Style</button>
+           <div class="btnBox">
+            <button onclick="addStyle()" class="btn">Add Style</button>
+            <button onclick="removeStyle()" class="btn">Remove Style</button>
+           </div>
         </div>
         <script>
         function addStyle() {
