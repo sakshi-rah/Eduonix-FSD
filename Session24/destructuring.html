@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Destructuring Function</h1>
+    <script>
+        function calculation(a,b){
+           const sum = a+b;
+           const sub = a-b;
+           const multi = a*b;
+           const div = a/b;
+           const mod = a%b;
+
+            return[sum,sub,multi,div,mod];
+        }
+        const[sum,sub,multi,div,mod]=calculation(23,4);
+        document.write(`Addition: ${sum} <br>`)
+        document.write(`Substraction: ${sub} <br>`)
+        document.write(`Multipication: ${multi} <br>`)
+        document.write(`Division: ${div} <br>`)
+        document.write(`modulus: ${mod} <br>`)
+
+    </script>
+</body>
+</html>
