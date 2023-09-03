@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .thead{
+            background-color: black;
+            color: white;
+        }
+        
+        table{
+            background-color: wheat;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,7 +24,7 @@
     <p class="details"></p>
 
     <table border="1">
-        <thead>
+        <thead class="thead">
             <tr>
                 <th>Id</th><th>UserId</th><th>Title</th><th>Completed</th>
             </tr>
@@ -42,9 +53,7 @@
                     <td>${mydata.id}</td>
                     <td>${mydata.userId}</td>
                     <td>${mydata.title}</td>
-                    <td>${mydata.completed}</td>
-                    
-                    `;
+                    <td>${mydata.completed}</td>`;
                 tableData.innerHTML+=tr;
             }
         }
