@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 23</title>
+</head>
+
+<body>
+    <h1>Exceptional Handaling</h1>
+
+    <script>
+        //javascript code for exception handling
+
+        console.log("connection Opened");
+
+        try {
+            //risky code
+            console.log(decodeURI("%https://www.google.com/"));
+            //const count=89;
+            //console.log(count.toUpperCase());
+        } catch (error) {
+            console.log("Error Type :", error);
+        }
+        finally {
+            console.log("connection closed");
+        }
+
+    </script>
+</body>
+
+</html>
