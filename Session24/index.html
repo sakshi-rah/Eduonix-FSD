@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session 24</title>
-</head>
-<body>
-    <script>
-        
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Session 24</title>
+
+        <style>
+        .containerStyle{
+         width: 450px;
+         border-radius: 20px;
+         background-color: brown;
+         color: wheat;
+         font-size: 23px;
+        }
+        .fruitsImg{
+            width: 250px;
+            border-radius: 20px;
+            margin: 20px;
+            margin-left: 100px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>Hello! This is Styling Page</h1>
+        <div class="containerStyle" id="container">
+            <img src="./fruits.webp" alt="fruits" class="fruitsImg">
+            <p class="description">Karnataka state implements several schemes
+                for the benefit of farmers. Farmers undertake different
+                agriculture and agriculture related activities like growing
+                Agriculture crops, Horticulture crops, Sericulture, Dairy,
+                Poultry, Fishery etc. Each of this activity requires specialised
+                knowledge and experience.</p>
+            <button onclick="addStyle()">Add Style</button>
+            <button onclick="removeStyle()">Remove Style</button>
+        </div>
+        <script>
+        function addStyle() {
+            let add = document.getElementById('container');
+            add.classList.add('containerStyle');
+        }
+
+        function removeStyle() {
+            let remove = document.getElementById('container');
+            remove.classList.remove('containerStyle');
+        }
     </script>
-</body>
+    </body>
+
 </html>
