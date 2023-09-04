@@ -7,11 +7,22 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1 style="text-align: center;">Project-2</h1>
+        <h1>Project-2</h1>
         <div class="container">
-            <h2>To-Do List</h2>
+            <h1>To-Do List</h1>
             <input type="text" class="input" />
-            <button class="btn">Add</button>
+            <button class="btn" onclick="addToDo()">Add</button>
+            <div>
+                <ol class="list-container">
+                    <li id="list">Task-1</li>
+                    <li id="list">Task-2</li>
+                    <li id="list">Task-3</li>
+    
+                </ol>
+            </div>
         </div>
+
+
+        <script src="./script.js"></script>
     </body>
 </html>
