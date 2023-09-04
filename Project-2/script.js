@@ -11,7 +11,9 @@ function Add(){
         inputs.value="";
         newEle.querySelector("i").addEventListener("click" , remove);
         function remove(){
-            newEle.remove()
+            newEle.remove();
         }
     }
 }
+
+
