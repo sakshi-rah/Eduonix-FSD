@@ -31,3 +31,25 @@ h1{
     border-radius: 3px;
     color: white;
 }
+
+ul li{
+    font-size: 20px;
+    user-select: none;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    list-style: none;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-image: url(./circle-icon.png);
+    background-size: cover;
+    background-position: center;
+    left: -35px;
+    background-color: white;
+}
