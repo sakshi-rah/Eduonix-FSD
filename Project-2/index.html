@@ -4,25 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do List</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Project-2</h1>
         <div class="container">
-            <h1>To-Do List</h1>
-            <input type="text" class="input" />
-            <button class="btn" onclick="addToDo()">Add</button>
-          
-                <ul class="list-container">
-                    <li id="list">Task-1</li>
+            <h2>To-Do List</h2>
+            <input type="text" id="input" placeholder="Enter Your List"/>
+            <button class="btn" onclick="addTask()">Add</button>
+                <ol id="list-container">
+                    <!--<li id="list">Task-1</li>
                     <li id="list">Task-2</li>
-                    <li id="list">Task-3</li>
+                    <li id="list">Task-3</li>-->
     
-                </ul>
+                </ol>
           
         </div>
+        <div class="text">
+            
+        </div>
+        <script src="script.js"></script>
 
 
-        <script src="./script.js"></script>
     </body>
 </html>
