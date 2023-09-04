@@ -21,30 +21,47 @@ h1{
 h2{
     text-align: center;
 }
-#input{
+input{
     width: 280px;
-    padding: 5px;
+    padding: 7px;
+    padding-right: 0%;
     border: none;
     border-radius: 3px;
-    border: 1px solid rgb(17, 9, 139);
     font-size: 18px;
-
+    border: 1px solid rgb(17, 9, 139);
 }
-.btn{
-    background-color: rgb(41, 143, 6);
+button{
     padding: 7px;
     border: none;
     border-radius: 3px;
     color: white;
     font-size: 18px;
-
-}
-
-ol li{
-    font-size: 20px;
-    user-select: none;
-    padding: 10px;
-    position: relative;
     cursor: pointer;
-    margin: 10px;
+    background-color: rgb(8, 4, 96);
+
 }
+
+
+.text ul{
+    position: relative;
+    background-color: rgb(8, 4, 96);
+    color: white;
+    font-size: 19px;
+    border-radius: 3px;
+    padding: 7px;
+    text-align: left;
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+ }
+
+/*
+btn
+   
+    input
+  
+
+
+*/

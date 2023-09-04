@@ -1,17 +1,17 @@
-let input = document.getElementById("input");
-let list = document.getElementById("list-container");
+let inputs = document.getElementById("inp");
+let text = document.querySelector(".text");
 
-function addTask(){
-    if(input.value ===''){
-        alert('You must write something!')
+function Add(){
+    if(inputs.value == ""){
+        alert("Please Enter Task")
     }else{
-        let li = document.createElement("li");
-        li.innerHtml = input.value;
-        list.appendChild(li);
-        let span = document.createElement("span");
-        span.innerHTML = "/u00d7";
-        li.appendChild(span);
+        let newEle = document.createElement("ul");
+        newEle.innerHTML=`${inputs.value} <i class="fa-solid fa-trash"></i>`;
+        text.appendChild(newEle);
+        inputs.value="";
+        newEle.querySelector("i").addEventListener("click" , remove);
+        function remove(){
+            newEle.remove()
+        }
     }
-    input.value = ''
-   
 }
