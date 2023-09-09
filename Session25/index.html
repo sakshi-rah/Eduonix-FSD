@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM</title>
+</head>
+<body>
+     
+    <p id="test">This is DOM Practice Session</p>
+
+    <div class="container">
+        <div class="comp-item1">
+           <span>This is a cotainer first child</span>
+        </div>
+
+        <div class="comp-item2">
+            This is a cotainer second child
+        </div>
+        
+    </div>
+
+    <script>
+        console.log(document.title)
+        const para=document.getElementById("test").innerHTML;
+        console.log(para);
+
+        let ele=document.querySelector(".container");
+        console.log(ele);
+
+        let childele = ele.children;
+        console.log(childele)
+
+        const span = document.querySelector('span').innerHTML;
+        console.warn(span)
+
+        let array = Array.from(childele);
+        array.forEach((item)=>{
+           console.log(item)
+        })
+
+    </script>
+
+</body>
+</html>
