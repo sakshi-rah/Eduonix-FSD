@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events of Js</title>
+    </head>
+    <body>
+        <h1>Events In Javascript</h1>
+        <p id="test"></p>
+        <button onclick="displayTime()">Time</button>
+        <button onclick="displayDate()">Date</button>
+        <button onclick="displayDay()">Day</button>
+
+        <script>
+        const date = new Date();
+        function displayTime(){
+            document.getElementById('test').innerHTML=date
+        }
+        function displayDate(){
+            document.getElementById('test').innerHTML=date.getDate()
+        }
+        function displayDay(){
+            document.getElementById('test').innerHTML=date.getDay()
+        }
+        function alertMsg(){
+            alert('Welcome');
+        }
+         alertMsg()
+    </script>
+    </body>
+</html>
