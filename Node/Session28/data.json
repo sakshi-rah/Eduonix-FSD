@@ -1,10 +1,28 @@
 {
   "users": [
     {
-      "id": "2",
+      "id": "1",
       "name": "Sakshi Rahangdale",
       "email": "rahangdalesakshi2@gmail.com",
       "phone": "09356580327"
+    },
+    {
+      "id": "2",
+      "name": "mukesh pimpalkar",
+      "email": "pimpalkarmukesh07@gmail.com",
+      "phone": "8806862672"
+    },
+    {
+      "userId": 11,
+      "title": "API tester",
+      "completed": false,
+      "id": "j66i362"
+    },
+    {
+      "id": "3",
+      "name": "atul rah",
+      "email": "atul07@gmail.com",
+      "phone": "8234567223"
     }
   ]
 }
