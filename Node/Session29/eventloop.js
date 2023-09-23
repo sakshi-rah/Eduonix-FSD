@@ -14,12 +14,12 @@ function process(num1,num2){
 }
 
 function addition(num){
-    return process(num,num+7);
+    return process(num,num+10);
 }
 
 function printResult(num){
     var add= addition(num);
-    console.log(add);
+    console.log("adition :",add);
 }
 
 printResult(20);
