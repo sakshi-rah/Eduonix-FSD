@@ -1,7 +1,7 @@
 function Counter(){
 
     //private variable
-    let count=1;
+    let count=10;
 
     //private function
     function increment(){
@@ -20,8 +20,8 @@ function Counter(){
 }
 
 
-const counterObj= new Counter();
+const Cobj= new Counter();
  
-console.log(counterObj.getCount());
-counterObj.incrementCount();
-console.log(counterObj.getCount());
+console.log(Cobj.getCount());
+Cobj.incrementCount();
+console.log(Cobj.getCount());
