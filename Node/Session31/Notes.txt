@@ -11,14 +11,21 @@ COllection Iterators
 2. Iterators:
         --->Objects implemented using Iterator protocol(interface)
         --->it provides standard way to iterate over arrays ,string, maps,sets...
-        
+
+*********************************************************************************
 OOPS principles
 *********************************************************************************
 class and Objects
 - when we create an object its small part which can have the access of all the class functionality
 
+
 1. Encapsulation: same value can treat differently in your project
 there are two ways of it
 
     A. Method Overriding
+    ------------------------
+    > when child class is extending a prent class means a child can access all the properties of parent class
+    > bu child can also implement its own similar functionality and use it by overriding parent method.
     B. Method Overloading
+    ------------------------
+    > same functiona name and call it with different paramenters or different types (Multiple Behaviour) 
