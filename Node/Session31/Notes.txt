@@ -12,3 +12,7 @@ COllection Iterators
         --->Objects implemented using Iterator protocol(interface)
         --->it provides standard way to iterate over arrays ,string, maps,sets...
         
+OOPS principles
+*********************************************************************************
+class and Objects
+- when we create an object its small part which can have the access of all the class functionality
