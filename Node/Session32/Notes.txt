@@ -1,0 +1,3 @@
+C. Abstraction
+    ------------------------
+    > we can limit the access of variables outside the class by using access specifier like public and private

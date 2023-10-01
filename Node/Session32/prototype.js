@@ -1,5 +1,5 @@
 //functional constructor
-var Teacher= function(name,email,country,dob){
+let Teacher= function(name,email,country,dob){
     this.name=name;
     this.email=email;
     this.country=country;
@@ -17,11 +17,8 @@ Teacher.prototype.calculateAge= function(){
 }
 
 //prototype
-Teacher.prototype.display= function(){
-    console.log(`Name: ${this.name}`);
-    console.log(`Email: ${this.email}`);
+Teacher.prototype.getCountry= function(){
     console.log(`Country: ${this.country}`);
-    console.log(`Dob: ${this.dob}`);
 }
 
 Teacher.prototype.getEmail=function(){
@@ -35,4 +32,4 @@ console.log(Teacher1);
 Teacher1.sayHello();
 Teacher1.calculateAge();
 Teacher1.getEmail();
-Teacher1.display();
+Teacher1.getCountry();
