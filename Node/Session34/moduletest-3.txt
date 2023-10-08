@@ -1,0 +1,30 @@
+Link: https://docs.google.com/document/d/1xtPEJ4vGQgywssjmQaWHluG93jFHw4H-YzYE-uoe7Uo/edit
+
+Test description : Get the user’s IP address & display information on the page along with their location on google maps. Also utilise the user’s pin code to show all the post offices available in that area.
+
+Total marks : 100 
+
+Time duration : 90 minutes
+
+Figma Design Link : https://www.figma.com/file/TEeaW2ghQCO1LYE4M8EAnd/Untitled-(Copy)?node-id=0%3A1&t=E9q3sWwThzuTXaWJ-0
+
+Deliverables [Total marks : 95] :
+
+Get the user's IP Address. (IP address shall be displayed as soon as the user lands on the website) [10 marks]
+The Get Data button should send a get request to the below-given API. [15 marks]
+API- https://ipinfo.io/${IP}/geo
+${IP} will be the IP of the user.
+Note : Information received shall be stored properly since it will be used multiple times in the below deliverables.
+Display the following information on the page : [10 marks]
+Latitude
+Longitude
+City
+Region
+Time Zone
+Using the latitude and longitude received from the above GET request, show the user's location on Google Maps. [20 marks]
+Using the timezone received from the GET request in point 2, get the time of the user's location.You have to get the current time from the given TIME ZONE, and not your time. [10 marks]
+Using the Pin code received from the GET request in point 2, send another get request to another API. [20 marks]
+API- https://api.postalpincode.in/pincode
+/${pincode} - where ${pincode} is the Pincode received from the GET request in point 2
+This will give you a list of post offices in that Pincode. Show all the post offices available in that area as shown in the Figma Design.
+Create a search box and filter the postal offices by name and branch office. [10 marks]
