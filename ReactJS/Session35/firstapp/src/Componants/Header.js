@@ -1,9 +1,11 @@
 import React from 'react'
-import './Header.css'
+import UserDetails from './UserDetails'
+// import './Header.css'
 function Header() {
   return (
-    <div className='headerSection'>
-    <h2>  This is Header Section. </h2>
+    <div className='headerSection bg-success text-white p-2 m-5'>
+        <h2>  This is Header Section. </h2>
+        <UserDetails/>
     </div>
   )
 }
