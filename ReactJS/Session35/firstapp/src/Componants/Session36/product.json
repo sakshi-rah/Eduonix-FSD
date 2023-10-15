@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Apple",
+        "price":100,
+        "description":"Fresh Apples",
+        "view":4.5
+    },
+    {
+        "id":2,
+        "name":"Banana",
+        "price":50,
+        "description":"Healthy Banana",
+        "view":4.9
+    },
+    {
+        "id":3,
+        "name":"Grapes",
+        "price":70,
+        "description":"black fresh grapes",
+        "view":4.2
+    },
+    {
+        "id":4,
+        "name":"Orange",
+        "price":120,
+        "description":"fresh nagpur oranges",
+        "view":5.0
+    },
+    {
+        "id":5,
+        "name":"Chiku",
+        "price":90,
+        "description":"fresh sweet chiku",
+        "view":5.0
+    }
+]
