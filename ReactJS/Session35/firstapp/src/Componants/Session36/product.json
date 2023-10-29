@@ -17,21 +17,21 @@
         "id":3,
         "name":"Grapes",
         "price":70,
-        "description":"black fresh grapes",
+        "description":"Black fresh grapes",
         "view":4.2
     },
     {
         "id":4,
         "name":"Orange",
         "price":120,
-        "description":"fresh nagpur oranges",
+        "description":"Fresh nagpur oranges",
         "view":5.0
     },
     {
         "id":5,
         "name":"Chiku",
         "price":90,
-        "description":"fresh sweet chiku",
+        "description":"Fresh sweet chiku",
         "view":5.0
     }
 ]
