@@ -8,10 +8,10 @@ function Counter() {
     }
 
   return (
-    <div>
-    <h2>Counter App</h2>
-        <p>Count: {count}</p>
-        <button onClick={increment}>increment</button>
+    <div className='m-3'>
+    <h1>Counter App</h1>
+        <h4>Count: {count}</h4>
+        <button onClick={increment} className='btn btn-primary my-3'>increment</button>
     </div>
   )
 }
