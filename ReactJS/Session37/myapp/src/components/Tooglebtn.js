@@ -8,7 +8,7 @@ function Tooglebtn() {
     };
     return (
         <div>
-            <button onClick={toggleButton} className='btn btn-warning mb-5'>{ison? 'ON': 'OFF'}</button>
+            <button onClick={toggleButton} className='btn btn-warning my-5'>{ison? 'ON': 'OFF'}</button>
         </div>
     )
 }
