@@ -1,12 +1,14 @@
 import './App.css';
-import Counter from './components/counter';
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min"
+import Counter from './components/Counter';
+import Tooglebtn from './components/Tooglebtn';
+import Greeting from './components/Greetings';
 
 function App() {
   return (
     <div className="App">
       <Counter/>
+      <Tooglebtn/>
+      <Greeting/>
     </div>
   );
 }
