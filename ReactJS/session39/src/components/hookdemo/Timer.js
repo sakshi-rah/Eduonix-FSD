@@ -5,7 +5,7 @@ function Timer() {
 
     useEffect(() => {
         console.log(count)
-        setTimeout(() => setCount(count + 1), 1000);
+        setTimeout(() => setCount(count + 1), 5000);
     })
     return (
         <div>
