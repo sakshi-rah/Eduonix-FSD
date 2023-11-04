@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h2>Today is Session39 on useEffect</h2>
-     <Submissiontimer submissionDate="2023-11-10T23:59:59"/>
+      <Submissiontimer submissionDate="2023-11-10T23:59:59" />
     </div>
   );
 }

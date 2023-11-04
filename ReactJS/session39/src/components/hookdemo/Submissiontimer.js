@@ -29,16 +29,16 @@ function Submissiontimer({ submissionDate }) {
     }, [submissionDate])
 
     return (
-        <div className='container w-75 bg-primary text-light rounded p-3 mt-5'>
+        <div className='container w-75 bg-primary text-light rounded p-3 mt-5 '>
             <h1>Submission Timer</h1>
-            <div className='d-flex justify-content-around p-2 m-3'>
-                <div>
+            <div className='d-flex justify-content-around p-2 m-3 row'>
+                <div className='col'>
                     <h2><span className='bg-warning p-1 rounded'>Deal</span> of the Day</h2>
                     <p>Kindly Project Submit within 6days, Do your best! <br/> All the best Students. </p>
                 </div>
-                <div>
+                <div className='col'>
                     <h3>Time Left</h3>
-                    <p className='fs-4 bg-light text-dark p-1 rounded border'>{timeleft}</p>
+                    <p className='fs-4 bg-light text-dark p-1 w-50 m-auto rounded border'>{timeleft}</p>
                 </div>
             </div>
         </div>
