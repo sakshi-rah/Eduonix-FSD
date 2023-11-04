@@ -16,4 +16,4 @@ function Realtimeclock() {
     )
 }
 
-export default Realtimeclock
+export default Realtimeclock;
