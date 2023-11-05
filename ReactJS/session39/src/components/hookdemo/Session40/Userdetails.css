@@ -1,0 +1,12 @@
+table{
+    background-color: lightgreen;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px;
+}
+table,
+th,
+td {
+    border: 2px solid rgba(0, 0, 0, 0.856);
+    padding: 3px;
+}
