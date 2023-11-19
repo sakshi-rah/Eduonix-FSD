@@ -7,7 +7,7 @@ function ThemedComponent(){
 
     return(
         <div style={{background:theme==='light'?'green':'yellow',
-        color:theme==='light'?'#333':'gray'}}>
+        color:theme==='light'?'#fff':'gray'}}>
             <p>This  is a Themed Component</p>
 
             <button onClick={toggleTheme}>Toggle Theme</button>

@@ -11,15 +11,21 @@ import Realtimeclock from './components/hookdemo/realtimeclock';
 import MyGrandParent from './components/hookdemo/Session41/mygrandparent';
 import { ThemeProvider } from './components/hookdemo/Session42/ThemeContext';
 import ThemedComponent from './components/hookdemo/Session42/ThemeComponent';
+import { AuthProvide } from './components/hookdemo/Session42/AuthContext';
+import UserInfo from './components/hookdemo/Session42/UserInfo';
 
 function App() {
   return (
     <div className="App">
-      <h2>Today is Session41</h2>
+      { /*<h2>Today is Session41</h2>
       <MyGrandParent />
       <ThemeProvider>
         <ThemedComponent />
-      </ThemeProvider>
+       </ThemeProvider>*/}
+       <AuthProvide>
+        <h1>Authentication App</h1><br/><br/>
+        <UserInfo/>
+       </AuthProvide>
     </div>
   );
 }
