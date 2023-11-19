@@ -9,12 +9,17 @@ import Submissiontimer from './components/hookdemo/Submissiontimer';
 import Useeffect from './components/hookdemo/Useeffect';
 import Realtimeclock from './components/hookdemo/realtimeclock';
 import MyGrandParent from './components/hookdemo/Session41/mygrandparent';
+import { ThemeProvider } from './components/hookdemo/Session42/ThemeContext';
+import ThemedComponent from './components/hookdemo/Session42/ThemeComponent';
 
 function App() {
   return (
     <div className="App">
-      <h2>Today is Session40</h2>
-     <MyGrandParent/>
+      <h2>Today is Session41</h2>
+      <MyGrandParent />
+      <ThemeProvider>
+        <ThemedComponent />
+      </ThemeProvider>
     </div>
   );
 }
